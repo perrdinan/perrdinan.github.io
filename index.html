@@ -1,0 +1,272 @@
+`<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portofolio pribadi - halaman utama" />
+  <title>Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="container topbar-inner">
+      <div class="brand" aria-label="Brand">
+        <span class="logo" aria-hidden="true">
+          <img src="ferdinand.jpeg" alt="Foto logo Ferdinand Eko Mardio" class="logo-photo" loading="lazy" />
+        </span>
+        <span>Ferdinand Eko Mardio</span>
+
+      </div>
+
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="#home" data-nav="home">Home</a>
+        <a href="#about" data-nav="about">About</a>
+        <a href="#projects" data-nav="projects">Projects</a>
+        <a href="#skills" data-nav="skills">Skills</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+
+      <button class="btn menu-btn" id="openMenu" type="button" aria-label="Buka menu">
+        <span aria-hidden="true">☰</span> Menu
+      </button>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu mobile">
+    <div class="drawer-inner">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#about" data-nav="about">About</a>
+      <a href="#projects" data-nav="projects">Projects</a>
+      <a href="#skills" data-nav="skills">Skills</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <section class="hero" id="home">
+        <div class="hero-grid">
+          <div class="card hero-main">
+            <div class="pill"><span class="dot" aria-hidden="true"></span> Tersedia untuk freelance & project kolaborasi</div>
+            <h1 class="title">Hi, saya <span class="grad">Ferdinand Eko Mardio</span> — Developer yang suka membangun produk yang rapi & cepat.</h1>
+
+            <p class="subtitle">Saya fokus pada pengembangan web (UI/UX, frontend, dan integrasi). Tujuan saya: membuat pengalaman pengguna yang halus, performa baik, dan kode mudah dipelihara.</p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#projects">Lihat Projects</a>
+              <a class="btn" href="#contact">Hubungi Saya</a>
+              <span class="kbd" title="Tip">Scroll atau klik menu</span>
+            </div>
+          </div>
+
+          <aside class="card hero-side" aria-label="Ringkasan">
+            <div class="avatar">
+              <div class="avatar-img" aria-hidden="true">
+                <img src="ferdinand.jpeg" alt="Foto profil Ferdinand Eko Mardio" class="avatar-photo" loading="lazy" />
+              </div>
+              <div>
+                <h3>Profil Singkat</h3>
+                <p>Frontend • UI • Web Apps</p>
+              </div>
+            </div>
+
+            <div class="stat-grid">
+              <div class="stat">
+                <div class="n">+10</div>
+                <div class="l">Project kecil hingga besar</div>
+              </div>
+              <div class="stat">
+                <div class="n">90%</div>
+                <div class="l">Kerapian UI & usability</div>
+              </div>
+            </div>
+
+            <div class="panel" style="padding:14px; border-radius:18px;">
+              <div style="font-weight:800; letter-spacing:-.2px; margin-bottom:6px">Fokus saat ini</div>
+              <div style="color: var(--muted); font-size: 14px">Membangun landing page & dashboard yang responsif dan aksesibel.</div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-head">
+          <div>
+            <h2>About</h2>
+            <p>Kenalan singkat dan pendekatan kerja</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="panel">
+            <h3 style="margin:0 0 8px; letter-spacing:-.2px">Tentang saya</h3>
+            <p style="margin:0; color: var(--muted)">Saya adalah developer yang senang mengubah ide menjadi halaman web yang terlihat bagus dan terasa cepat. Saya terbiasa bekerja dengan fokus pada struktur, styling yang konsisten, dan detail interaksi.</p>
+            <ul class="list">
+              <li>Berpikir user-first (UX, hierarchy, aksesibilitas)</li>
+              <li>Rapih dalam implementasi komponen dan layout</li>
+              <li>Mengutamakan performa dan maintainability</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3 style="margin:0 0 8px; letter-spacing:-.2px">Cara kerja</h3>
+            <p style="margin:0; color: var(--muted)">Proses saya biasanya: diskusi kebutuhan → sketsa/struktur → implementasi UI → review & polish → iterasi berdasarkan feedback.</p>
+            <div class="tag-row" style="margin-top:12px">
+              <span class="tag">UI/UX</span>
+              <span class="tag">Responsive</span>
+              <span class="tag">Aksesibel</span>
+              <span class="tag">Clean Code</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-head">
+          <div>
+            <h2>Projects</h2>
+            <p>Koleksi contoh karya (silakan edit sesuai project Anda)</p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="panel project">
+            <div class="tag-row">
+              <span class="tag">Landing Page</span>
+              <span class="tag">UI</span>
+              <span class="tag">Responsive</span>
+            </div>
+            <h3>Product Launch Page</h3>
+            <p>Halaman promosi dengan hero yang kuat, section informatif, dan CTA yang jelas.</p>
+            <div class="links">
+              <a class="btn" href="#contact">Minta Demo</a>
+            </div>
+          </article>
+
+          <article class="panel project">
+            <div class="tag-row">
+              <span class="tag">Dashboard</span>
+              <span class="tag">UX</span>
+              <span class="tag">Data Viz</span>
+            </div>
+            <h3>Mini Admin Dashboard</h3>
+            <p>UI dashboard yang rapi: kartu ringkasan, tabel, dan panel interaktif.</p>
+            <div class="links">
+              <a class="btn" href="#contact">Diskusikan</a>
+            </div>
+          </article>
+
+          <article class="panel project">
+            <div class="tag-row">
+              <span class="tag">Website</span>
+              <span class="tag">Performance</span>
+              <span class="tag">SEO</span>
+            </div>
+            <h3>Portfolio Tematik</h3>
+            <p>Portofolio/website satu halaman dengan animasi halus dan struktur konten SEO-friendly.</p>
+            <div class="links">
+              <a class="btn" href="#projects">Lihat lainnya</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-head">
+          <div>
+            <h2>Skills</h2>
+            <p>Presentasi kemampuan (bisa diedit)</p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="skill">
+            <div class="top"><span class="name">HTML/CSS</span><span class="pct">90%</span></div>
+            <div class="bar" aria-label="HTML/CSS 90%"><i style="width:90%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="top"><span class="name">JavaScript</span><span class="pct">80%</span></div>
+            <div class="bar" aria-label="JavaScript 80%"><i style="width:80%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="top"><span class="name">UI/UX</span><span class="pct">85%</span></div>
+            <div class="bar" aria-label="UI/UX 85%"><i style="width:85%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="top"><span class="name">Aksesibilitas</span><span class="pct">75%</span></div>
+            <div class="bar" aria-label="Aksesibilitas 75%"><i style="width:75%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="top"><span class="name">Performance</span><span class="pct">78%</span></div>
+            <div class="bar" aria-label="Performance 78%"><i style="width:78%"></i></div>
+          </div>
+          <div class="skill">
+            <div class="top"><span class="name">Kolaborasi</span><span class="pct">82%</span></div>
+            <div class="bar" aria-label="Kolaborasi 82%"><i style="width:82%"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-head">
+          <div>
+            <h2>Contact</h2>
+            <p>Kontak yang bisa dihubungi</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="panel">
+            <h3 class="contact-title">Hubungi Saya</h3>
+            <p class="contact-subtitle">Pilih salah satu kanal berikut:</p>
+
+            <div class="contact-links">
+              <a class="btn contact-link" href="mailto:fmardio8@gmail.com" target="_blank" rel="noopener">
+                <img class="contact-icon" src="email.png" alt="" loading="lazy" />
+                Email
+              </a>
+              <a class="btn contact-link" href="https://wa.me/085725822969" target="_blank" rel="noopener">
+                <img class="contact-icon" src="whatsapp.jpg" alt="" loading="lazy" />
+                WhatsApp
+              </a>
+              <a class="btn contact-link" href="https://instagram.com/perrdinan" target="_blank" rel="noopener">
+                <img class="contact-icon" src="instagram.jpg" alt="" loading="lazy" />
+                Instagram
+              </a>
+              <a class="btn contact-link" href="https://github.com/perrdinan" target="_blank" rel="noopener">
+                <img class="contact-icon" src="github.png" alt="" loading="lazy" />
+                GitHub
+              </a>
+              <a class="btn contact-link" href="#" target="_blank" rel="noopener">
+                <img class="contact-icon" src="tiktok.png" alt="" loading="lazy" />
+                TikTok
+              </a>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3 class="contact-title">Catatan</h3>
+            <ul class="list">
+              <li>Silakan kirim pesan singkat dan jelaskan kebutuhan Anda.</li>
+              <li>Jika lewat email, sertakan preferensi waktu diskusi.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <footer>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
+          <div>© <span id="year"></span> Ferdinand Eko Mardio.</div>
+
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
